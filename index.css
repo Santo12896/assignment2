@@ -163,7 +163,7 @@ ul li {
 }
 
 .box img {
-    width: 16em;
+    width: 15em;
     height: 300px;
 }
 
@@ -172,6 +172,46 @@ ul li {
     margin: -2px;
     border-radius: 14px;
     cursor: pointer;
+}
+
+/* play-game */
+
+.online-game {
+    padding: 0 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.play-game {
+
+    width: 345px;
+    height: 180px;
+    text-align: end;
+}
+
+.play {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-image img {
+    width: 350px;
+    height: 350px;
+    position: relative;
+}
+
+/* .absolute-image{
+    position: relative;
+} */
+.absolute-image img {
+    width: 150px;
+    height: 180px;
+    position: absolute;
+    margin-top: -10%;
+    margin-left: -4%;
 }
 
 /* --------------------------------------
@@ -209,18 +249,48 @@ ul li {
         width: 100%;
     }
 
-    .game-section{
+    .game-section {
         padding: 100px 0;
     }
-    .game-card{
+
+    .game-card {
         flex-direction: column;
         row-gap: 10px;
     }
-    .box p{
+
+    .box p {
         width: 50%;
         margin: auto;
         margin-bottom: 10px;
     }
+
+    .online-game {
+        padding: 0;
+        flex-direction: column;
+
+    }
+
+    .play-game {
+        height: auto;
+        text-align: center;
+        margin: auto;
+    }
+
+    .online-image {
+        margin: 50px auto 0 auto;
+    }
+    .online-image img {
+        width: 300px;
+        height: 320px;
+        
+    }
+    .absolute-image img {
+        margin-top: -22%;
+        margin-left: -8%;
+        width: 100px;
+        height: 120px;
+    }
+
 }
 
 /* --------------------------------------
@@ -251,16 +321,41 @@ ul li {
         width: 100%;
 
     }
-    .game-section{
+
+    .game-section {
         padding: 100px 0;
     }
-    .game-card{
+
+    .game-card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    .box p{
+
+    .box p {
         width: 75%;
         margin: auto;
         margin-bottom: 10px;
+    }
+
+    .online-game {
+        padding: 0;
+        flex-direction: column;
+
+    }
+
+    .play-game {
+        height: auto;
+        text-align: center;
+        margin: auto;
+    }
+
+    .online-image {
+        margin: 50px auto 0 auto;
+    }
+    
+    .absolute-image img {
+        margin-top: -16%;
+        margin-left: -8%;
+        
     }
 }
