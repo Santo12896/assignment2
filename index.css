@@ -180,7 +180,7 @@ ul li {
     padding: 0 240px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .play-game {
@@ -212,6 +212,62 @@ ul li {
     position: absolute;
     margin-top: -10%;
     margin-left: -4%;
+}
+
+/* profile-btn */
+.create-profile{
+    margin-top: 100px;
+    /* margin: 100px 240px 0 240px; */
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+}
+/* .profile-btn{
+    padding: 130px 240px 0 240px;
+} */
+.profile-btn button {
+    display: flex;
+    align-items: center;
+    
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 130px 240px;
+    
+}
+
+.primary-btn {
+    width: 190px;
+    height: 70px;
+    border-radius: 50px;
+    background: #FFF;
+    border: 0;
+    
+
+}
+
+.primary-btn:hover{
+    border: solid 1px red;
+    margin: -1px;
+    cursor: pointer;
+}
+
+.btn-contant:hover{
+    color: red;
+}
+
+.primary-btn img{
+    width: 50px;
+    height: 50px;
+    padding: 0 5px;
+}
+
+.btn-contant {
+    color: #0B0223;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /* --------------------------------------
@@ -279,11 +335,13 @@ ul li {
     .online-image {
         margin: 50px auto 0 auto;
     }
+
     .online-image img {
         width: 300px;
         height: 320px;
-        
+
     }
+
     .absolute-image img {
         margin-top: -22%;
         margin-left: -8%;
@@ -291,6 +349,16 @@ ul li {
         height: 120px;
     }
 
+    .profile{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        padding: 100px 10px;
+    }
+
+    .primary-btn{
+        width: 100%;
+        
+    }
 }
 
 /* --------------------------------------
@@ -352,10 +420,20 @@ ul li {
     .online-image {
         margin: 50px auto 0 auto;
     }
-    
+
     .absolute-image img {
         margin-top: -16%;
         margin-left: -8%;
+
+    }
+    .profile{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        padding: 100px 10px;
+    }
+
+    .primary-btn{
+        width: 100%;
         
     }
 }
