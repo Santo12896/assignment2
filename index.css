@@ -10,13 +10,48 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+.primary-text {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.secondary-text {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.primary-button {
+    padding: 21px 40px;
+    border-radius: 48px;
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    border: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.secondary-button {
+    border-radius: 48px;
+    background: #4EC5F7;
+    padding: 21px 40px;
+    border: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 1em;
+}
+
 /* nabber start */
 
-header {
-    margin: 44px 240px;
+.nabber {
+    padding: 44px 240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
 .nabber-left {
@@ -61,6 +96,76 @@ ul li {
     background: rgba(11, 2, 35, 0.10);
 }
 
-/* li a{
-    text-decoration: none;
-} */
+/* banner start */
+
+.banner {
+    margin: 130px 240px;
+}
+
+.banner h2 {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.banner h1 {
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#download {
+    margin: .5em 0;
+}
+
+#supported-online {
+    margin-bottom: 1.3em;
+}
+
+/* --------------------------------------
+            mobial responsive start
+------------------------------------------*/
+
+@media screen and (max-width:576px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .nabber {
+        flex-direction: column;
+        width: 100%;
+        padding: 44px 0;
+
+    }
+
+    .follow-us {
+        width: 10.2em;
+    }
+
+    .nabber-left {
+        margin-bottom: 2.5em;
+    }
+}
+
+/* --------------------------------------
+            tablet responsive
+------------------------------------------*/
+
+@media screen and (min-width:576px) and (max-width:768px) {
+    .nabber {
+        flex-direction: column;
+
+    }
+
+    .follow-us {
+        width: 11.5em;
+
+    }
+
+    .nabber-left {
+        margin-bottom: 2.5em;
+    }
+}
